@@ -1,5 +1,5 @@
 <?php
-    // dit is de database connectie
+    // dit is de database connectie voor project
 
 $dbname = "donkeytravel";
 $servername = "localhost";
