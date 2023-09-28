@@ -7,7 +7,7 @@ $username = "root";
 $password = "root";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname,$username, $password ");
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname,$username, $password");
 } catch (PDOException $error){
     echo $error->getMessage();
 }
