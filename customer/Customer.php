@@ -75,7 +75,7 @@ class Customer
         $email = $this->get_email();
 
         $sql = $conn->Prepare("INSERT INTO customers
-values (:id, :name, :password, :number, :email)");
+VALUES (:id, :name, :password, :number, :email)");
 
         $sql->bindParam(":id", $id);
         $sql->bindParam(":name", $name);
@@ -105,7 +105,7 @@ values (:id, :name, :password, :number, :email)");
         }
     }
 
-    public function searchCustomer(){
+    public function searchCustomer($id){
         global $conn;
 
         $sql = $conn->Prepare("SELECT * FROM customers 
@@ -123,7 +123,7 @@ values (:id, :name, :password, :number, :email)");
         }
     }
 
-        public function deleteCustomer(){
+        public function deleteCustomer($id){
          global $conn;
 
          $sql = $conn->prepare("DELETE FROM customers 
