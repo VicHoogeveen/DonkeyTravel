@@ -14,7 +14,7 @@
             $customer1 = new Customer();
             $customer1->deleteCustomer($id);
         } else {
-            echo "The customer hasn't been removed. <br/>";
+            echo "The employee hasn't been removed. <br/>";
         }
         ?>
     </body>

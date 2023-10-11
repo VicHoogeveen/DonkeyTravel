@@ -18,9 +18,9 @@
         $id1 = new Customer( $name, $password, $number, $email); // maakt object
         $id1->updateCustomer($id);                   // vervangt de tabelgegevens voor objectgegevens
         echo "This is the updated information: <br/>";
-        echo $id1 . "<br/>";
+        echo $id . "<br/>";
         $id1->afdrukken();                           // prints
-    
+
         ?>
     </body>
 </html>

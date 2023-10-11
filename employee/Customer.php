@@ -84,7 +84,7 @@ VALUES (:id, :name, :password, :number, :email)");
         $sql->bindParam(":email", $email);
         $sql->execute();
 
-        echo "The customer has been added :";
+        echo "The employee has been added :";
     }
 
     public function readCustomer(){
