@@ -4,20 +4,20 @@
 </head>
     <body>
         <?php
-        require "Customer.php";
+        require "employee.php";
 
         $id = $_POST["id"];
-        $customer1 = new Customer();
-        $customer1->searchCustomer($id);
+        $employee1 = new employee();
+        $employee1->searchEmployee($id);
         ?>
 
-        <form action="deleteCustomer3.php" method="POST">
+        <form action="deleteEmployee3.php" method="POST">
             <!-- $id cant be changed -->
             <input type="hidden" name="id" value=" <?php echo $id ?> ">
             <!-- 2x deleteBox-->
             <input type="hidden" name="deleteBox" value="no">
             <input type="checkbox" name="deleteBox" value="yes">
-            <label for="deleteBox"> Remove the Customer.</label><br/><br/>
+            <label for="deleteBox"> Remove the Employee.</label><br/><br/>
             <input type="submit"><br/><br/>
         </form>
     </body>

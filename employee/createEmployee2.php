@@ -2,7 +2,7 @@
 <html>
     <body>
         <?php
-        require "Customer.php";
+        require "employee.php";
 
         // reading fields of createCustomer -----
         $name = $_POST["nameField"];
@@ -11,12 +11,12 @@
         $email = $_POST["emailField"];
 
         // makes object -------------------------------
-        $customer = new Customer( $name, $password, $number, $email);
-        $customer->createCustomer();
+        $employee = new employee( $name, $password, $number, $email);
+        $employee->createEmployee($name, $password,$number,$email);
 
         // print object ---------------------------
 
-        $customer->afdrukken();
+        $employee->afdrukken();
         ?>
     </body>
 </html>

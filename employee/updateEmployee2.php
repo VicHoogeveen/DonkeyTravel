@@ -5,10 +5,10 @@
     <body>
         <?php
 
-        require "Customer.php";                    // needed to make an object
+        require "employee.php";                    // needed to make an object
         $id = $_POST["id"];
-        $id1 = new Customer();                // makes the object
-        $id1->searchCustomer($id);
+        $id1 = new employee();                // makes the object
+        $id1->searchEmployee($id);
 
 
 
@@ -22,9 +22,10 @@
         $email = $id1->get_email();
         ?>
 
-        <form action="updateCustomer3.php" method="POST">
+
+        <form action="updateEmployee3.php" method="POST">
             <!-- $id cant be changed -->
-            <input type="hidden" name="id" value="<?php echo $id1; ?> "><br/>
+            <input type="hidden" name="id" value="<?php echo $id; ?> "><br/>
             <input type="text" name="name" value="<?php echo $name; ?> "><br/>
             <input type="text" name="password" value="<?php echo $password; ?> "><br/>
             <input type="text" name="number" value="<?php echo $number; ?> "><br/>

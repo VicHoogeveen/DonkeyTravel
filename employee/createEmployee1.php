@@ -3,8 +3,8 @@
 <head>
 </head>
     <body>
-        <h1>Create a Customer's page</h1>
-        <form action="createCustomer2.php" method="POST">
+        <h1>Create a Employee's page</h1>
+        <form action="createEmployee2.php" method="POST">
             <label for "nameField">name: </label>
             <input type="text" name="nameField"></input>
             <br/>

@@ -4,15 +4,15 @@
 </head>
     <body>
         <?php
-        require "Customer.php";
+        require "employee.php";
 
         $id = $_POST["id"];
         $delete = $_POST["deleteBox"];
 
         if ($delete == "yes") {
-            echo "The Customer is removed <br/>";
-            $customer1 = new Customer();
-            $customer1->deleteCustomer($id);
+            echo "The employee is removed <br/>";
+            $customer1 = new employee();
+            $customer1->deleteEmployee($id);
         } else {
             echo "The employee hasn't been removed. <br/>";
         }

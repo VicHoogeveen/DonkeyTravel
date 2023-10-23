@@ -4,11 +4,11 @@
     </head>
     <body>
         <?php
-        require "Customer.php";
+        require "employee.php";
 
         $id = $_POST["id"];
-        $customer1 = new Customer();
-        $customer1->searchCustomer($id);
+        $employee1 = new employee();
+        $employee1->searchEmployee($id);
         ?>
     </body>
 </html>
