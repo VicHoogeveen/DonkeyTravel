@@ -11,10 +11,6 @@
         $id1->searchEmployee($id);
 
 
-
-        // properties into the variables
-
-
         // properties in variabelen zetten
         $name = $id1->get_name();
         $password = $id1->get_password();

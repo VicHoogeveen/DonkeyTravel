@@ -110,17 +110,21 @@ class employee
         global $conn;
 
         $sql = $conn->Prepare("SELECT * FROM employee 
-               WHERE id = :id");
+                               WHERE id = :id");
 
         $sql->bindParam(":id", $id);
         $sql->execute();
 
         foreach ($sql as $employee){
-            echo $employee["id"] . "<br>";
-            echo $this->name = $employee["name"] . "<br>";
-            echo $this->password = $employee["password"] . "<br>";
-            echo $this->number = $employee["number"] . "<br>";
-            echo $this->email = $employee["email"] . "<br>";
+            echo $employee["id"];
+            echo "<br/>";
+            echo $this->name = $employee["name"];
+            echo "<br/>";
+            echo $this->password = $employee["password"];
+            echo "<br/>";
+            echo $this->number = $employee["number"];
+            echo "<br/>";
+            echo $this->email = $employee["email"];
         }
     }
 
@@ -143,7 +147,9 @@ class employee
         $number = $this->get_password();
         $email = $this->get_email();
 
-        $sql = $conn->prepare("UPDATE employee SET  name =:name, password = :password, number = :number, email = :email WHERE id = :id");
+        $sql = $conn->prepare("UPDATE employee 
+                               SET  name =:name, password = :password, number = :number, email = :email 
+                               WHERE id = :id");
 
         $sql->bindParam(":id", $id);
         $sql->bindParam(":name", $name);
