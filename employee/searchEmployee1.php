@@ -3,6 +3,7 @@
 <head>
   </head>
     <body>
+    <link rel="stylesheet" href="../DonkeyTravels.css">
         <h1>Search for an Employee</h1>
         <form action="searchEmployee2.php" method="POST">
             <label for="id">ID:</label>

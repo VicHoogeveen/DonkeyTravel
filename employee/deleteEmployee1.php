@@ -3,6 +3,7 @@
 <head>
 </head>
     <body>
+    <link rel="stylesheet" href="../DonkeyTravels.css">
         <h1>Delete a Customer</h1>
         <form action="deleteEmployee2.php" method="POST">
             <label for="id">id:</label>

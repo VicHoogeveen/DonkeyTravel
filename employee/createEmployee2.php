@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <body>
+    <link rel="stylesheet" href="../DonkeyTravels.css">
         <?php
         require "employee.php";
 
