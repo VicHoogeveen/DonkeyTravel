@@ -11,13 +11,21 @@
         $number = $_POST["numberField"];
         $email = $_POST["emailField"];
 
+        $gehashed = password_hash($password, null);
+        $passwordHash =$gehashed;
+
         // makes object -------------------------------
-        $employee = new employee( $name, $password, $number, $email);
-        $employee->createEmployee($name, $password,$number,$email);
+        $employee = new employee( $name, $passwordHash, $number, $email);
+        $employee->createEmployee($name, $passwordHash,$number,$email);
 
         // print object ---------------------------
 
-        $employee->afdrukken();
+        echo "<br/>";
+        echo ($name);
+        echo "<br/>";
+        echo ($number);
+        echo "<br/>";
+        echo ($email);
         ?>
     </body>
 </html>

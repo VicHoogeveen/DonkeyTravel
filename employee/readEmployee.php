@@ -7,6 +7,7 @@
         require "employee.php";
         $employee = new employee();
         $employee->readEmployee();
+
         ?>
     </body>
 </html>

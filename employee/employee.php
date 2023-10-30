@@ -97,12 +97,11 @@ class employee
             echo $employee["id"] . " - ";
             $this->set_name($employee["name"]);
             echo $employee["name"] . " - ";
-            $this->set_password($employee["password"]);
-            echo $employee["password"] . " - ";
             $this->set_number($employee["number"]);
             echo $employee["number"] . " - ";
             $this->set_email($employee["email"]);
-            echo $employee["email"] . " - ";
+            echo $employee["email"] ;
+            echo "<br>";
         }
     }
 
@@ -111,7 +110,6 @@ class employee
 
         $sql = $conn->Prepare("SELECT * FROM employee 
                                WHERE id = :id");
-
         $sql->bindParam(":id", $id);
         $sql->execute();
 
@@ -144,7 +142,7 @@ class employee
         $id;
         $name = $this->get_name();
         $password = $this->get_password();
-        $number = $this->get_password();
+        $number = $this->get_number();
         $email = $this->get_email();
 
         $sql = $conn->prepare("UPDATE employee 
