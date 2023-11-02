@@ -22,4 +22,6 @@
         </form>
     </body>
         <a href="indexEmployee.php">Go to the beginning page of Employees</a>
+<footer> You can contact us on the following email en number : <br>
+    Phone Number, ########### or DonkeyTravelBookings@gmail.com</footer>
 </html>

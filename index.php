@@ -13,5 +13,7 @@
            Here you will be able to get as much information as you need to plan your stay here. <br>
         We are excited to be meeting you soon! Enjoy your stay!</p>
         </body>
-<footer> You can contact us on the following media's :</footer>
+
+<footer> You can contact us on the following email en number : <br>
+         Phone Number, ########### or DonkeyTravelBookings@gmail.com</footer>
 </html>

@@ -30,5 +30,9 @@
             <input type="submit">
         </form>
     <br>
+
+    <a href="indexEmployee.php">Go to the beginning page of Employees</a>
     </body>
+<footer> You can contact us on the following email en number : <br>
+    Phone Number, ########### or DonkeyTravelBookings@gmail.com</footer>
 </html>

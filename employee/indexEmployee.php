@@ -24,5 +24,9 @@
         <br>
         <h1>Remove all the Employees</h1>
         <a href="deleteEmployee1.php">Employees Delete</a>
+    <br>
+    <footer> You can contact us on the following email en number : <br>
+        Phone Number, ########### or DonkeyTravelBookings@gmail.com</footer>
     </body>
+
 </html>
