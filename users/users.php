@@ -1,5 +1,5 @@
 <?php
-require_once "../databaseConn.php";
+require_once "databaseConn.php";
 
 class users
 {

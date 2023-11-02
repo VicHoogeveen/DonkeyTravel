@@ -6,6 +6,7 @@
                         <ul>
                             <li><a href="employee/indexEmployee.php">Employees</a></li>
                             <li><a href="users">Users</a></li>
+                            <li><a href="inlog.php">inloggen</a></li>
                         </ul>
              </nav>
         </div>
