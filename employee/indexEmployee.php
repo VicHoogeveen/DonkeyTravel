@@ -1,6 +1,15 @@
 <html>
     <body>
     <link rel="stylesheet" href="../DonkeyTravels.css">
+    <div class="topnav" id="myTopNav">
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../users">Users</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
        <h1> Add an Employee</h1>
         <a href="createEmployee1.php"> Employee Create</a>
         <br>

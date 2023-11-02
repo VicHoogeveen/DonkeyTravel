@@ -4,7 +4,17 @@
 </head>
     <body>
     <link rel="stylesheet" href="../DonkeyTravels.css">
-        <h1>Create a Employee's page</h1>
+    <div class="topnav" id="myTopNav">
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../users">Users</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <h1>Create an Employee's page</h1>
+    <br>
         <form action="createEmployee2.php" method="POST">
             <label for "nameField">name: </label>
             <input type="text" name="nameField"></input>
@@ -19,5 +29,6 @@
             <input type="text" name="emailField"></input>
             <input type="submit">
         </form>
+    <br>
     </body>
 </html>

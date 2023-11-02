@@ -1,31 +1,45 @@
 <!doctype html>
 <html>
-    <body>
-    <link rel="stylesheet" href="../DonkeyTravels.css">
-        <?php
-        require "employee.php";
+        <body>
+        <link rel="stylesheet" href="../DonkeyTravels.css">
 
-        // reading fields of createCustomer -----
-        $name = $_POST["nameField"];
-        $password = $_POST["passwordField"];
-        $number = $_POST["numberField"];
-        $email = $_POST["emailField"];
+        <div class="topnav" id="myTopNav">
+            <nav>
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../users">Users</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+            <?php
+            require "employee.php";
 
-        $gehashed = password_hash($password, null);
-        $passwordHash =$gehashed;
+            // reading fields of createEmployee -----
+            $name = $_POST["nameField"];
+            $password = $_POST["passwordField"];
+            $number = $_POST["numberField"];
+            $email = $_POST["emailField"];
 
-        // makes object -------------------------------
-        $employee = new employee( $name, $passwordHash, $number, $email);
-        $employee->createEmployee($name, $passwordHash,$number,$email);
+            $gehashed = password_hash($password, null);
+            $passwordHash =$gehashed;
 
-        // print object ---------------------------
+            // makes object -------------------------------
+            $employee = new employee( $name, $passwordHash, $number, $email);
+            $employee->createEmployee($name, $passwordHash,$number,$email);
 
-        echo "<br/>";
-        echo ($name);
-        echo "<br/>";
-        echo ($number);
-        echo "<br/>";
-        echo ($email);
-        ?>
-    </body>
+            // print object ---------------------------
+
+            echo "<br/>";
+            echo ($name);
+            echo "<br/>";
+            echo ($number);
+            echo "<br/>";
+            echo ($email);
+            ?>
+
+        <br>
+        <a href="indexEmployee.php">Go to the beginning page of Employees</a>
+        </body>
+
 </html>

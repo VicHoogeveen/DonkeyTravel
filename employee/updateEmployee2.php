@@ -4,6 +4,15 @@
 </head>
     <body>
     <link rel="stylesheet" href="../DonkeyTravels.css">
+    <div class="topnav" id="myTopNav">
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../users">Users</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
         <?php
 
         require "employee.php";                    // needed to make an object
@@ -14,9 +23,9 @@
 
         // properties in variabelen zetten
         $name = $id1->get_name();
-        $password = $id1->get_password();
         $number = $id1->get_number();
         $email = $id1->get_email();
+
         ?>
 
 
@@ -24,11 +33,13 @@
             <!-- $id cant be changed -->
             <input type="hidden" name="id" value="<?php echo $id; ?> "><br/>
             <input type="text" name="name" value="<?php echo $name; ?> "><br/>
-            <input type="text" name="password" value="<?php echo $password; ?> "><br/>
+            <input type="text" name="password" value=""><br/>
             <input type="text" name="number" value="<?php echo $number; ?> "><br/>
             <input type="text" name="email" value="<?php echo $email; ?> "><br/>
-            <input type="submit"><br/><br/>
+            <input type="submit"><br/>
         </form>
     </body>
+<br>
+    <a href="indexEmployee.php">Go to the beginning page of Employees</a>
 </html>
 
