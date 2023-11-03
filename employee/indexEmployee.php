@@ -5,7 +5,7 @@
         <nav>
             <ul>
                 <li><a href="../index.php">Home</a></li>
-                <li><a href="../users">Users</a></li>
+                <li><a href="../users/userindex.html">Users</a></li>
             </ul>
         </nav>
     </div>
@@ -25,7 +25,7 @@
         <h1>Remove all the Employees</h1>
         <a href="deleteEmployee1.php">Employees Delete</a>
     <br>
-    <footer> You can contact us on the following email en number : <br>
+    <footer> You can contact us on the following email and number : <br>
         Phone Number, ########### or DonkeyTravelBookings@gmail.com</footer>
     </body>
 

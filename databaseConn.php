@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
     // dit is de database connectie voor project
 $username = "root";
-$password = "";
+$password = "root";
 $servername = "localhost";
 $dbname = "donkey_travel";
 

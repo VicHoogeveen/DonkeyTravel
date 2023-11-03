@@ -4,7 +4,7 @@
 $dbhost = "localhost";
 $dbname = "donkey_travel";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "root";
 
 class User
 {
@@ -74,30 +74,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <link rel="stylesheet" href="../stylesheet.css">
 </head>
-<body>
-<div class="topnav" id="myTopNav">
-    <nav>
-        <ul>
-            <li><a href="../index.php">HOME</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="logodiv">
-
-    <!-- Dit is de logo -->
-    <img class="logodiv" src="../pictures/donkeytravel.png">
-</div>
-<div class="login">
-        <form method="POST" action="../users/userindex.html">
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <input type="submit" value="Login">
-        </form>
-    <H2><a href="../users/createUsers1.php">Aanmelden</a></H2>
-</div>
-</body>
-<footer>
-    <p>You can contact us on the following email en number : </p>
+    <body>
+    <div class="topnav" id="myTopNav">
+        <nav>
+            <ul>
+                <li><a href="../index.php">HOME</a></li>
+            </ul>
+        </nav>
+    </div>
     <br>
-    <p>Phone Number, ########### or DonkeyTravelBookings@gmail.com </p>
+    <br>
+    <div class="logodiv">
+
+        <!-- Dit is de logo -->
+        <img class="logodiv" src="../pictures/donkeytravel.png">
+    </div>
+    <div class="login">
+            <form method="POST" action="../users/userindex.html">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <input type="submit" value="Login">
+            </form>
+        <H2><a href="../users/createUsers1.php">Aanmelden</a></H2>
+    </div>
+    </body>
+<footer>
+    <p>You can contact us on the following email en number : <br>
+   Phone Number, ########### or DonkeyTravelBookings@gmail.com </p>
 </footer>
