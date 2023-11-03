@@ -5,8 +5,8 @@
              <nav>
                         <ul>
                             <li><a href="employee/indexEmployee.php">Employees</a></li>
-                            <li><a href="users">Users</a></li>
-                            <li><a href="inlog.php">inloggen</a></li>
+                            <li><a href="users/userindex.html">Users</a></li>
+                            <li><a href="inlog/inlog.php">Inloggen</a></li>
                         </ul>
              </nav>
         </div>
